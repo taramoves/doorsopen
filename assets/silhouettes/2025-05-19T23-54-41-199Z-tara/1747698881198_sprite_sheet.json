@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "frameWidth": 640,
+    "frameHeight": 480,
+    "rows": 4,
+    "cols": 6,
+    "totalFrames": 18
+  },
+  "frames": [
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 0
+    },
+    {
+      "position": {
+        "x": 640,
+        "y": 0,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 1
+    },
+    {
+      "position": {
+        "x": 1280,
+        "y": 0,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 2
+    },
+    {
+      "position": {
+        "x": 1920,
+        "y": 0,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 3
+    },
+    {
+      "position": {
+        "x": 2560,
+        "y": 0,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 4
+    },
+    {
+      "position": {
+        "x": 3200,
+        "y": 0,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 5
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 480,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 6
+    },
+    {
+      "position": {
+        "x": 640,
+        "y": 480,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 7
+    },
+    {
+      "position": {
+        "x": 1280,
+        "y": 480,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 8
+    },
+    {
+      "position": {
+        "x": 1920,
+        "y": 480,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 9
+    },
+    {
+      "position": {
+        "x": 2560,
+        "y": 480,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 10
+    },
+    {
+      "position": {
+        "x": 3200,
+        "y": 480,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 11
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 960,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 12
+    },
+    {
+      "position": {
+        "x": 640,
+        "y": 960,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 13
+    },
+    {
+      "position": {
+        "x": 1280,
+        "y": 960,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 14
+    },
+    {
+      "position": {
+        "x": 1920,
+        "y": 960,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 15
+    },
+    {
+      "position": {
+        "x": 2560,
+        "y": 960,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 16
+    },
+    {
+      "position": {
+        "x": 3200,
+        "y": 960,
+        "w": 640,
+        "h": 480
+      },
+      "frameIndex": 17
+    }
+  ]
+}
