@@ -1,0 +1,160 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f5f5f5;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  #camera-view {
+    width: 640px;
+    height: 480px;
+    margin: 0 auto 20px;
+    border: 2px solid #ddd;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background: #ccc;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  #trim-ui {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 5px;
+  }
+  
+  .frame-preview {
+    width: 320px;
+    height: 240px;
+    margin: 0 auto 15px;
+    border: 1px solid #ccc;
+  }
+  
+  .slider-container {
+    margin: 10px 0;
+  }
+  
+  #gallery-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  #gallery-link a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .playback-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 5px;
+  }
+  
+  .controls-row {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .playback-controls button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 100px;
+  }
+  
+  .playback-controls button:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+  .toggle-button {
+    position: relative;
+    padding-left: 35px !important;
+    text-align: left;
+    background: #f44336 !important;
+  }
+  
+  .toggle-button:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: white;
+    transition: all 0.3s;
+  }
+  
+  .toggle-button.active-toggle {
+    background: #4CAF50 !important;
+  }
+  
+  .toggle-button.active-toggle:before {
+    left: calc(100% - 28px);
+  }
+  
+  #frame-counter {
+    margin-top: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  #prev-frame-btn, #next-frame-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    min-width: 50px;
+  }
+  
+  #set-start-btn {
+    background: #4CAF50;
+  }
+  
+  #set-end-btn {
+    background: #f44336;
+  }
+  
+  #set-end-btn:hover {
+    background: #d32f2f;
+  }
