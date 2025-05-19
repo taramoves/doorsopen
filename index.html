@@ -10,29 +10,41 @@
 <body>
   <div class="container">
     <h1>Dance Silhouette Booth</h1>
-    <div id="camera-view"></div>
-    
-    <div id="controls">
-      <button id="record-btn" disabled>Start Recording (5s)</button>
-      <div id="status">Loading camera...</div>
+    <div id="main-view">
+      <div id="camera-view"></div>
       
-      <div id="trim-ui" class="hidden">
-        <h3>Trim Your Silhouette</h3>
-        <div class="frame-preview" id="frame-preview"></div>
-        <div class="slider-container">
-          <input type="range" id="trim-start" min="0" max="100" value="0">
-          <span>Start: <span id="start-frame">0</span></span>
+      <div id="controls">
+        <button id="record-btn" disabled>Start Recording (5s)</button>
+        <div id="status">Loading camera...</div>
+        
+        <div id="trim-ui" class="hidden">
+          <h3>Trim Your Silhouette</h3>
+          <div class="frame-preview" id="frame-preview"></div>
+          <div class="slider-container">
+            <input type="range" id="trim-start" min="0" max="100" value="0">
+            <span>Start: <span id="start-frame">0</span></span>
+          </div>
+          <div class="slider-container">
+            <input type="range" id="trim-end" min="0" max="100" value="100">
+            <span>End: <span id="end-frame">100</span></span>
+          </div>
+          <button id="confirm-btn">Save Silhouette</button>
+          <button id="cancel-btn">Cancel</button>
         </div>
-        <div class="slider-container">
-          <input type="range" id="trim-end" min="0" max="100" value="100">
-          <span>End: <span id="end-frame">100</span></span>
+        
+        <div id="gallery-link" class="hidden">
+          <div class="info-message">
+            <strong>GitHub Storage Setup:</strong><br>
+            To save your silhouettes to GitHub, you need to configure your credentials:
+            <ol>
+              <li>Create a GitHub repository to store your silhouettes</li>
+              <li>Generate a personal access token with 'repo' permissions</li>
+              <li>Enter your GitHub details in the sketch.js file</li>
+            </ol>
+            <a href="setup.html" class="setup-link">View detailed setup instructions</a>
+          </div>
+          <a href="gallery.html" id="view-gallery">View Gallery</a>
         </div>
-        <button id="confirm-btn">Save Silhouette</button>
-        <button id="cancel-btn">Cancel</button>
-      </div>
-      
-      <div id="gallery-link" class="hidden">
-        <a href="#" id="view-gallery">View Gallery</a>
       </div>
     </div>
   </div>

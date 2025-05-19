@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GitHub Setup - Dance Silhouette Booth</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .setup-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .setup-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .step {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .step h3 {
+      color: #2c5282;
+      margin-top: 0;
+    }
+    
+    .code {
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 4px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      margin: 10px 0;
+    }
+    
+    .warning {
+      background: #fff5f5;
+      border-left: 4px solid #e53e3e;
+      padding: 10px 15px;
+      margin: 15px 0;
+      color: #c53030;
+    }
+    
+    img {
+      max-width: 100%;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      margin: 10px 0;
+    }
+    
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="setup-container">
+    <h1>GitHub Setup for Dance Silhouette Booth</h1>
+    
+    <div class="setup-card">
+      <p>This guide will help you set up your application to save silhouettes directly to your GitHub repository.</p>
+      
+      <div class="warning">
+        <strong>Important:</strong> Your personal access token grants access to your GitHub account. Never share it with others or commit it to public repositories.
+      </div>
+      
+      <div class="step">
+        <h3>Step 1: Create a GitHub Repository</h3>
+        <ol>
+          <li>Go to <a href="https://github.com/new" target="_blank">github.com/new</a></li>
+          <li>Name your repository (e.g., "dance-silhouettes")</li>
+          <li>Make it public or private according to your preference</li>
+          <li>Click "Create repository"</li>
+        </ol>
+      </div>
+      
+      <div class="step">
+        <h3>Step 2: Generate a Personal Access Token</h3>
+        <ol>
+          <li>Go to <a href="https://github.com/settings/tokens" target="_blank">github.com/settings/tokens</a></li>
+          <li>Click "Generate new token" (classic)</li>
+          <li>Name your token (e.g., "Dance Silhouette Booth")</li>
+          <li>Set expiration according to your preference</li>
+          <li>Select the "repo" scope (allows managing repositories)</li>
+          <li>Click "Generate token"</li>
+          <li><strong>Copy your token immediately!</strong> You won't be able to see it again.</li>
+        </ol>
+      </div>
+      
+      <div class="step">
+        <h3>Step 3: Configure Your Application</h3>
+        <ol>
+          <li>Open the file <code>sketch.js</code> in a code editor</li>
+          <li>Find the following section near the beginning of the <code>downloadSilhouette</code> function:</li>
+          <div class="code">// GitHub settings - REPLACE THESE WITH YOUR OWN VALUES
+const GITHUB_TOKEN = ""; // ADD YOUR TOKEN HERE
+const GITHUB_USERNAME = ""; // ADD YOUR USERNAME HERE
+const GITHUB_REPO = ""; // ADD YOUR REPOSITORY NAME HERE
+const GITHUB_BRANCH = "main";</div>
+          <li>Fill in your GitHub username, repository name, and the token you generated</li>
+          <li>Save the file</li>
+        </ol>
+      </div>
+      
+      <div class="step">
+        <h3>Step 4: Test Your Setup</h3>
+        <ol>
+          <li>Return to the main application</li>
+          <li>Record and save a silhouette</li>
+          <li>You should see your files being uploaded to GitHub</li>
+          <li>You'll get a link to view them on GitHub when finished</li>
+        </ol>
+      </div>
+      
+      <div class="buttons">
+        <a href="index.html" class="button-link"><button>Back to Application</button></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 
